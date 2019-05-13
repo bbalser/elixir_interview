@@ -2,7 +2,6 @@ defmodule InterviewTest do
   use ExUnit.Case
 
   describe "fizzbuzz/1" do
-
     test "returns 1 when given 1" do
       assert Interview.fizzbuzz(1) == 1
     end
@@ -19,18 +18,16 @@ defmodule InterviewTest do
       assert Interview.fizzbuzz(4) == 4
     end
 
-    test "returns 5 when given 5" do
-      assert Interview.fizzbuzz(5) == 5
+    test "returns buzz when given 5" do
+      assert Interview.fizzbuzz(5) == "buzz"
     end
 
-    test "returns buzz when given 6" do
-      assert Interview.fizzbuzz(6) == "buzz"
+    test "returns fizz when given 6" do
+      assert Interview.fizzbuzz(6) == "fizz"
     end
 
     test "returns fizzbuzz when given 15" do
       assert Interview.fizzbuzz(15) == "fizzbuzz"
     end
-
   end
-
 end
